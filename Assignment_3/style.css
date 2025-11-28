@@ -1,0 +1,196 @@
+
+
+/* rest margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #264ba3;
+    padding: 15px 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* NAV LINKS */
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* HOVER EFFECT ON NAV LINKS */
+header nav a:hover {
+    color: #ffbe76;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 55px;
+    color: #ff5c47;
+    margin: 10px 0;
+}
+
+
+.hero-img img {
+    width: 280px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+/* HOVER EFFECT ON IMAGE */
+.hero-img img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.about, .skills, .projects, .contact {
+    padding: 40px 8%;
+}
+/* CHANGING H2 */
+.about h2, .skills h2, .projects h2, .contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+.skill-box {
+    margin-top: 20px;
+    margin-left: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap:20px;
+}
+
+.skill {
+    width: auto;
+    background: #1e3c90;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.skill span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+/* HOVER EFFECT ON SKILLS BOX */
+.skill:hover {
+    background: #2f56d6;
+    transform: translateY(-5px);
+}
+/* PROJECT SECTION */
+.projects {
+    padding: 40px 8%;
+}
+
+.projects h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+/* /* Adding shadow and aligning them  */
+.project-card {
+    width: 70%;
+    margin: 0 auto 40px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.437);
+    min-height: 220px;    
+    text-align: center;
+    transition: 0.3s ease;
+}
+/* hover effect on project card */
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-text p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.contact-form {
+  width: 330px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    margin: 20px auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #264ba3;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #264ba3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #1e3c90;
+}
+
+@media (max-width: 850px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill-box {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
