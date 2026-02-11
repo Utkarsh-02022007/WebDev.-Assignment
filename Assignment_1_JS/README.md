@@ -1,0 +1,1 @@
+<img width="1470" height="956" src="/Users/awanikyadav/Downloads/smart-event-dashboard-full/Assignment_1_JS/Screenshot 2026-02-11 at 15.05.58.png">
