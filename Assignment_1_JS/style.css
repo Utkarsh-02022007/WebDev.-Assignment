@@ -56,12 +56,12 @@ button {
   cursor: pointer;
 }
 
-.btn-row {
+.btn {
   display: flex;
   gap: 10px;
 }
 
-.event-item {
+.event_item {
   border: 1px solid #ccc;
   padding: 8px;
   margin-top: 10px;
