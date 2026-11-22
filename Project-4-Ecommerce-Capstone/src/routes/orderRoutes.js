@@ -1,0 +1,11 @@
+const router = require("express").Router();
+const { authenticate, authorize } = require("../middleware/auth");
+const asyncHandler = require("../utils/asyncHandler");
+const c = require("../controllers/orderController");
+router.use(authenticate);
+router.post("/checkout", authorize("customer"), c.checkout);
+router.get("/mine", authorize("customer"), c.mine);
+router.get("/seller", authorize("seller"), c.sellerOrders);
+router.get("/:id", c.get);
+router.patch("/:id/status", authorize("seller", "admin"), c.updateStatus);
+module.exports = router;

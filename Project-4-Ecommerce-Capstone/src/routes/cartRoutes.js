@@ -1,0 +1,10 @@
+const router = require("express").Router();
+const { authenticate, authorize } = require("../middleware/auth");
+const asyncHandler = require("../utils/asyncHandler");
+const c = require("../controllers/cartController");
+router.use(authenticate, authorize("customer"));
+router.get("/", c.get);
+router.post("/items", asyncHandler(c.add));
+router.patch("/items/:productId", asyncHandler(c.update));
+router.delete("/items/:productId", asyncHandler(c.remove));
+module.exports = router;
