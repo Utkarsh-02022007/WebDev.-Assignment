@@ -1,0 +1,15 @@
+{
+  "name": "lab4-secure-connect-platform",
+  "version": "1.0.0",
+  "description": "Web Dev III Lab 4 - Secure Connect and Communication Platform",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "dev": "node --watch server.js"},
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "socket.io": "^4.8.1"
+  }
+}
