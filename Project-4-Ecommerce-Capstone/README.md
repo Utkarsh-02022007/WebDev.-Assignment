@@ -3,7 +3,7 @@
 **Course:** Backend Development Capstone  
 **Student:** Utkarsh Yadav · **Roll No.:** 2501730329  
 **Programme:** B.Tech CSE (AI & ML) · **Semester:** 3 · **Section:** C  
-**Team size:** 2 students
+**Team size:** 1 students
 
 ## 1. Overview
 A REST API backend for customers, sellers and administrators. Customers browse products, maintain a cart and place orders. Sellers manage their own products, stock and assigned orders. Administrators manage categories, create seller accounts and view platform metrics.
